@@ -6,5 +6,6 @@ define('SITE', ROOT . '/site');
 define('PAGES', SITE . '/pages');
 define('THEME', SITE . '/theme');
 define('TEMPLATES', THEME . '/templates');
+define('PLUGINS', SITE . '/plugins');
 
 ?>

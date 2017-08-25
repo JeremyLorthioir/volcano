@@ -25,4 +25,31 @@ function plugin($name, $options = false) {
 	}
 }
 
-?>
+/**
+ * @desc - get plugin path
+ * @param string $plugin - plugin name
+ */
+function get_plugin_path($plugin) {
+	if (!is_dir(PLUGINS . "/$plugin")) {
+		die("Plugin named $plugin does not exist");
+	}
+
+	return PLUGINS . "/$plugin";
+}
+
+/**
+ * @desc - get plugin partial from $plugin/partials/$file.php
+ * @param string $name - plugin name
+ * @param string $file - file name
+ */
+function get_plugin_partial($plugin, $file) {
+	if (!is_dir(PLUGINS . "/$plugin")) {
+		die("Plugin named $plugin does not exist");
+	}
+
+	if (!file_exists(PLUGINS . "/$plugin/partials/${file}.php")) {
+		die("Plugin partial named ${file}.php does not exist");
+	}
+
+	include PLUGINS . "/$plugin/partials/${file}.php";
+}

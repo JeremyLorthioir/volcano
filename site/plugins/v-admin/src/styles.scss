@@ -1,0 +1,88 @@
+body.page-admin.not-logged-in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.va-wrap {
+	display: flex;
+	height: 100%;
+}
+
+.va-nav {
+	width: 250px;
+	height: 100%;
+	padding: 30px;
+	flex-shrink: 0;
+	background-color: #3d3d3d;
+
+	ul {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		list-style-type: none;
+	}
+
+	li {
+		margin-bottom: 5px;
+
+		&:last-of-type {
+			font-size: 12px;
+			margin-top: auto;
+		}
+	}
+
+	a {
+		color: #fff;
+		margin: 0;
+	}
+}
+
+.va-main {
+	padding: 30px;
+	width: 100%;
+	flex-shrink: 1;
+}
+
+.va-error {
+	color: #C44D58;
+	font-size: 80%;
+	margin-bottom: 10px;
+}
+
+.va-login {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+		text-align: center;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		border: 2px solid #ddd;
+		padding: 15px 10px;
+		outline: 0;
+		border-radius: 3px;
+		margin-bottom: 5px;
+		transition: box-shadow .3s,
+					border-color .3s;
+
+		&:focus {
+			box-shadow: 0 0 3px #ccc;
+			border-color: #ccc;
+		}
+	}
+
+	input[type="submit"] {
+		background-color: #556270;
+		cursor: pointer;
+		border: none;
+		border-radius: 3px;
+		padding: 10px;
+		width: 120px;
+		color: #fff;
+		margin-top: 10px;
+	}
+}

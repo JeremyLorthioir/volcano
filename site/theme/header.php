@@ -9,4 +9,4 @@
 	</head>
 	<body class="<?php body_class(); ?>">
 		<div class="wrap">
-			<main>
+			<main class="main">

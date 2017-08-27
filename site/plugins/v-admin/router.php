@@ -13,6 +13,11 @@ if (isset(url_params()[1])) {
 	} elseif (is_dir($tmpl_path . "/$page")) {
 		$file = '';
 
+		/**
+		 * get a template file
+		 * determine to get index.php of a dir/
+		 * or to get a specific template file inside a dir/
+		 */
 		foreach (url_params() as $key => $filepath) {
 			if ($key === 0) { continue; }
 

@@ -1,6 +1,6 @@
 <?php
 if (!va_logged_in()) {
-	require get_plugin_path('v-admin') . '/pages/login.php';
+	require get_plugin_path('v-admin') . '/templates/login.php';
 } else {
 	get_plugin_partial('v-admin', 'header');
 ?>

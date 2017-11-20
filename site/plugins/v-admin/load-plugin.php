@@ -10,4 +10,3 @@ if (!va_logged_in()) {
 <?php
 	get_plugin_partial('v-admin', 'footer');
 }
-?>

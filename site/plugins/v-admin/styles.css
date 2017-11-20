@@ -64,3 +64,16 @@ body.page-admin.not-logged-in {
     width: 120px;
     color: #fff;
     margin-top: 10px; }
+
+.va-list {
+  list-style-type: none; }
+  .va-list li {
+    padding: 10px; }
+    .va-list li:nth-child(2n) {
+      background-color: #eaeaea; }
+  .va-list a {
+    margin: 0; }
+  .va-list time {
+    padding-top: 3px;
+    font-size: 12px;
+    display: block; }

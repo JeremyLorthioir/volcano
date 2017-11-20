@@ -86,3 +86,25 @@ body.page-admin.not-logged-in {
 		margin-top: 10px;
 	}
 }
+
+.va-list {
+	list-style-type: none;
+
+	li {
+		padding: 10px;
+
+		&:nth-child(2n) {
+			background-color: #eaeaea;
+		}
+	}
+
+	a {
+		margin: 0;
+	}
+
+	time {
+		padding-top: 3px;
+		font-size: 12px;
+		display: block;
+	}
+}

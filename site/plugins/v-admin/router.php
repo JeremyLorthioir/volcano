@@ -23,7 +23,7 @@ if (isset(url_params()[1])) {
 
 			if (is_file($tmpl_path . "/${filepath}.php")) {
 				require $tmpl_path . "/${filepath}.php";
-			} elseif(is_dir($tmpl_path . "/${filepath}")) {
+			} elseif (is_dir($tmpl_path . "/${filepath}")) {
 				$file .= $filepath . '/';
 			} else {
 				if (file_exists($tmpl_path . "/${file}/${filepath}.php")) {

@@ -107,3 +107,9 @@ To call a plugin from your theme files use:
 The `plugin()` function takes two arguments. First is the name. Second argument is passed to the plugin root function, like: `googleAnalytics($id)`. The second argument is used to pass options to your plugin. This could be a single value, like in this case, an id, or an array of options. `$options` is default to `false`, and is not needed if your plugin doesn't need it.
 
 Your plugin can have `.css` and `.js` files, and will automatically be added to the front-end. Read the section "CSS & JS" for more information.
+
+## Contributors 
+
+<a href="https://github.com/sebastianks/volcano/graphs/contributors" >
+  <img src="https://contrib.rocks/image?repo=sebastianks/volcano" />
+</a>

@@ -16,18 +16,27 @@ A server running PHP.
 
 ## Get started
 
+First, you will have to create a new folder for your project. 
+Then create an `index.php` file in it and add requirements for our `setup.php file`. **You are good to go for the next step!**
+
 ```bash
 mkdir ~/path/to/project
 cd ~/path/to/project
 
 touch index.php
 echo "<?php require 'setup.php' ?>" >> index.php
+```
 
+Now, add our dependencies using the following command. Easy as that !
+```bash
 composer require sebastianks/volcano
+```
 
-# IMPORTANT
-# copy initial configuration and site to your project
-# if you don't do this you *have* to set these things up manually.
+
+#### IMPORTANT
+You have to copy initial configuration and site to your project
+If you don't do this you *have* to set these things up manually.
+```bash
 cd ~/path/to/project/
 cp vendor/sebastianks/volcano/config/.htaccess .
 cp -R vendor/sebastianks/volcano/config/* .
